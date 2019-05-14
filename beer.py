@@ -3,7 +3,7 @@ import RaspberryBeer as rb
 keg = rb.keg
 user = rb.user
 
-if keg != empty and user != geed:
+if keg.isEmpty == False:
     if user.isFrat == True:
         if user.isPike == True:
             rb.performButtchug()
@@ -11,8 +11,8 @@ if keg != empty and user != geed:
             rb.pourBeer()
     elif user.isPledge == True:
         rb.pretendToPour()
-elif keg != empty:
-    print(“Fuck off geed”)
+    else:
+        print(“Fuck off geed”)
 else:
     print(“Keg is empty”)
 
